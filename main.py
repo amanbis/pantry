@@ -1,7 +1,7 @@
 # Hey ya'll I am importing the parsing library
 import urllib.request
 from bs4 import BeautifulSoup
-url = "https://www.epicurious.com/recipes/food/views/three-bean-soup"
+url = str(input("Paste your Recipe URL: "))
 res = urllib.request.urlopen(url)
 html = res.read()
 bs = BeautifulSoup(html, "html.parser")
